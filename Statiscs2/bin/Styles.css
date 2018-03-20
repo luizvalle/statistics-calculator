@@ -1,0 +1,51 @@
+#dataVBox {
+	
+	-fx-spacing: 10;
+	-fx-padding: 25 25 25 25;
+}
+
+.fieldTitles{
+	
+	-fx-font-weight: bold;
+}
+
+#dataTxtArea {
+	
+	-fx-pref-width: 675;
+	-fx-pref-height: 140;
+}
+
+#measuresHBox {
+	
+	-fx-spacing: 10;
+}
+
+.measuresVBox {
+	
+	-fx-spacing: 10;
+	-fx-padding: 25 25 25 25;
+}
+
+#computeHBox {
+	
+	-fx-padding: 10 10 10 10;
+	-fx-spacing: 10;
+	-fx-alignment: CENTER;
+}
+
+.btns {
+	
+	-fx-pref-width: 100;
+}
+
+#boxandWhiskerPlotVBox {
+	
+	-fx-spacing: 10;
+	-fx-padding: 25 25 25 25;
+}
+
+#boxAndWhiskerPlotTextArea {
+	
+	-fx-pref-height: 500;
+	-fx-pref-width: 700;
+}

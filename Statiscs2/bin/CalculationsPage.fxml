@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import JavaFXApplication.Controller?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane fx:id="calculationBorderPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXApplication.Controller">
+	<stylesheets>
+		<URL value="@Styles.css" />
+	</stylesheets>
+	<center>
+		<VBox fx:id="generalVBox">
+			<VBox  fx:id="dataVBox">
+				<Text fx:id="datatxt" text="Data" styleClass="fieldTitles"/>
+				<TextArea fx:id="dataTxtArea"/>
+			</VBox>
+			<HBox fx:id="measuresBox">
+				<VBox fx:id="meMedModVBox" styleClass="measuresVBox">
+					<Text fx:id="meantxt" text="Mean" styleClass="fieldTitles"/>
+					<TextField fx:id="meanTextField" styleClass="measuresTextField" editable="false"/>
+					<Text fx:id="mediantxt" text="Median" styleClass="fieldTitles"/>
+					<TextField fx:id="medianTextField" styleClass="measuresTextField" editable="false"/>
+					<Text fx:id="modetxt" text="Mode" styleClass="fieldTitles"/>
+					<TextField fx:id="modeTextField" styleClass="measuresTextField" editable="false"/>
+				</VBox>
+				<VBox fx:id="szVrSdVBox" styleClass="measuresVBox">
+					<Text fx:id="sizetxt" text="Size" styleClass="fieldTitles"/>
+					<TextField fx:id="sizeTextField" styleClass="measuresTextField" editable="false"/>
+					<Text fx:id="variancetxt" text="Variance" styleClass="fieldTitles"/>
+					<TextField fx:id="varianceTextField" styleClass="varianceTextField" editable="false"/>
+					<Text fx:id="standardDeviationtxt" text="Standard Deviation" styleClass="fieldTitles"/>
+					<TextField fx:id="standardDeviationTextField" styleClass="standardDeviationTextField" editable="false"/>
+				</VBox>
+				<VBox fx:id="rfMdrgIqr" styleClass="measuresVBox">
+					<Text fx:id="rangetxt" text="Range" styleClass="fieldTitles"/>
+					<TextField fx:id="rangeTextField" styleClass="measuresTextField" editable="false"/>
+					<Text fx:id="midRangetxt" text="Mid Range" styleClass="fieldTitles"/>
+					<TextField fx:id="midRangeTextField" styleClass="measuresTextField" editable="false"/>
+					<Text fx:id="Iqrtxt" text="IQR" styleClass="fieldTitles"/>
+					<TextField fx:id="iqrTextField" styleClass="measuresTextField" editable="false"/>
+				</VBox>
+			</HBox>
+		</VBox>
+	</center>
+</BorderPane>
+
